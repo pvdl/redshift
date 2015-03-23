@@ -125,7 +125,7 @@ msgstr ""
 
 #: src/redshift.c:377
 msgid "Available adjustment methods:\n"
-msgstr "طرق التعديل المتاحة:\n"
+msgstr ""
 
 #: src/redshift.c:383
 msgid "Specify colon-separated options with `-m METHOD:OPTIONS'.\n"

@@ -1,17 +1,17 @@
-# Catalan translation for redshift
-# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# Persian translation for redshift
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
 # This file is distributed under the same license as the redshift package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: redshift\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/redshift\n"
 "POT-Creation-Date: 2014-05-07 20:17-0400\n"
-"PO-Revision-Date: 2012-04-16 19:12+0000\n"
-"Last-Translator: Marc Coll Carrillo <Unknown>\n"
-"Language-Team: Catalan <ca@li.org>\n"
-"Language: ca\n"
+"PO-Revision-Date: 2013-11-10 10:27+0000\n"
+"Last-Translator: Reza Habibi(rehb) <Unknown>\n"
+"Language-Team: Persian <fa@li.org>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,17 +21,17 @@ msgstr ""
 #: src/redshift.c:275
 #, c-format
 msgid "Period: Night\n"
-msgstr "Període: nit\n"
+msgstr "دوره زمانی : شب\n  "
 
 #: src/redshift.c:279
 #, c-format
 msgid "Period: Transition (%.2f%% day)\n"
-msgstr "Període: transició (%.2f%% dia)\n"
+msgstr "(%.2f%% day) دوره زمانی :تغییرات\n"
 
 #: src/redshift.c:281
 #, c-format
 msgid "Period: Daytime\n"
-msgstr "Període: dia\n"
+msgstr "دوره زمانی: روز\n"
 
 #. TRANSLATORS: help output 1
 #. LAT is latitude, LON is longitude,
@@ -41,13 +41,13 @@ msgstr "Període: dia\n"
 #: src/redshift.c:313
 #, c-format
 msgid "Usage: %s -l LAT:LON -t DAY:NIGHT [OPTIONS...]\n"
-msgstr "Ús: %s -l LAT:LON -t DIA:NIT [OPCIONS...]\n"
+msgstr "%s -l LAT:LON -t DAY:NIGHT [OPTIONS...]:استفاده از\n"
 
 #. TRANSLATORS: help output 2
 #. no-wrap
 #: src/redshift.c:319
 msgid "Set color temperature of display according to time of day.\n"
-msgstr "Fixa la temperatura de color a mostrar segons l'hora del dia.\n"
+msgstr "تنظیم درجه حرارت رنگ نمایشگر مطابق با زمان روز\n"
 
 #. TRANSLATORS: help output 3
 #. no-wrap
@@ -57,9 +57,9 @@ msgid ""
 "  -v\t\tVerbose output\n"
 "  -V\t\tShow program version\n"
 msgstr ""
-"  -h\t\tMostra aquest missatge d'ajuda\n"
-"  -v\t\tSortida detallada\n"
-"  -V\t\tMostra la versió del programa\n"
+"  -h\t\tنمایش این پیغام راهنما\n"
+"  -v\t\tVerbose output\n"
+"  -V\t\tنمایش نسخه برنامه\n
 
 #. TRANSLATORS: help output 4
 #. `list' must not be translated
@@ -81,6 +81,20 @@ msgid ""
 "  -r\t\tDisable temperature transitions\n"
 "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
 msgstr ""
+"  -b DAY:NIGHT\tبین ۰.۱ و ۱.۰)اعمال روشنایی صفحه)\n"
+"  -c FILE\tبارگزاری تنظیمات از فایل تنظیمات به خصوصی\n"
+"  -g R:G:B\tاضافه کردن تنظیمات گاما برای اعمال\n"
+"  -l LAT:LON\tمکان فعلی شما\n"
+"  -l PROVIDER\tانتخاب خدمات دهنده اینترنت شما جهت تنظیم خودکار مکان شما\n"
+"  \t\t(برای نمایش خدمات دهندگان در دسترس `list'تایپ)\n"
+"  -m METHOD\tMروشی که برای تنظیم دمای رنگ مورد استفاده قرار می گیرد\n"
+"  \t\t( برای نمایش روش های در دسترس`list'تایپ)\n"
+"  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+"  -O TEMP\tOne shot manual mode (set color temperature)\n"
+"  -p\t\tحالت چاپ (only print parameters and exit)\n"
+"  -x\t\tحالت بازگردانی (remove adjustment from screen)\n"
+"  -r\t\tغیرفعال کردن تغییرات دما\n"
+"  -t DAY:NIGHT\tتنظیم دمای رنگ برای شب یا روز\n"
 
 #. TRANSLATORS: help output 5
 #: src/redshift.c:353
@@ -92,11 +106,6 @@ msgid ""
 "more blue light, and setting a lower value will result in\n"
 "more red light.\n"
 msgstr ""
-"La temperatura neutra és %uK. Fer servir aquest valor no\n"
-"canviarà la temperatura de color del monitor. Establir la\n"
-"temperatura de color a un valor més alt que aquest tindrà\n"
-"com a resultat més llum blava, i establint-la a un valor més\n"
-"baix tindrà com a resultat més llum vermella.\n"
 
 #. TRANSLATORS: help output 6
 #: src/redshift.c:363
@@ -107,54 +116,48 @@ msgid ""
 "  Daytime temperature: %uK\n"
 "  Night temperature: %uK\n"
 msgstr ""
-"Valors per defecte:\n"
-"\n"
-"  Temperatura diurna: %uK\n"
-"  Temperatura nocturna: %uK\n"
 
 #. TRANSLATORS: help output 7
 #: src/redshift.c:371
 #, c-format
 msgid "Please report bugs to <%s>\n"
-msgstr "Si us plau, informeu dels errors a <%s>\n"
+msgstr ""
 
 #: src/redshift.c:377
 msgid "Available adjustment methods:\n"
-msgstr "Métodes d'ajust disponibles:\n"
+msgstr "طرق التعديل المتاحة:\n"
 
 #: src/redshift.c:383
 msgid "Specify colon-separated options with `-m METHOD:OPTIONS'.\n"
 msgstr ""
-"Especifiqueu opcions separades per dos punts amb '-m MÈTODE:OPCIONS'.\n"
 
 #. TRANSLATORS: `help' must not be translated.
 #: src/redshift.c:386
 msgid "Try `-m METHOD:help' for help.\n"
-msgstr "Proveu '-m MÈTODE:help' per obtenir ajuda.\n"
+msgstr ""
 
 #: src/redshift.c:392
 msgid "Available location providers:\n"
-msgstr "Proveïdors d'ubicació disponibles:\n"
+msgstr ""
 
 #: src/redshift.c:398
 msgid "Specify colon-separated options with`-l PROVIDER:OPTIONS'.\n"
 msgstr ""
-"Especifiqueu opcions separades per dos punts amb '-l PROVEÏDOR:OPCIONS'.\n"
 
 #. TRANSLATORS: `help' must not be translated.
 #: src/redshift.c:401
 msgid "Try `-l PROVIDER:help' for help.\n"
-msgstr "Proveu '-l PROVEÏDOR:help' per obtenir ajuda.\n"
+msgstr ""
 
 #: src/redshift.c:414 src/redshift.c:506
 #, c-format
 msgid "Initialization of %s failed.\n"
-msgstr "Ha fallat la inicialització de %s.\n"
+msgstr ""
 
 #: src/redshift.c:429 src/redshift.c:473 src/redshift.c:521 src/redshift.c:553
 #, c-format
 msgid "Failed to set %s option.\n"
-msgstr "L'establiment de la opció %s ha fallat.\n"
+msgstr ""
 
 #. TRANSLATORS: `help' must not be
 #. translated.
@@ -162,7 +165,7 @@ msgstr "L'establiment de la opció %s ha fallat.\n"
 #: src/redshift.c:434 src/redshift.c:476
 #, c-format
 msgid "Try `-l %s:help' for more information.\n"
-msgstr "Proveu '-l %s:help' per obtenir més informació.\n"
+msgstr ""
 
 #: src/redshift.c:462 src/redshift.c:543
 #, c-format
@@ -172,58 +175,58 @@ msgstr ""
 #: src/redshift.c:489
 #, c-format
 msgid "Failed to start provider %s.\n"
-msgstr "No s'ha pogut iniciar el proveïdor %s.\n"
+msgstr ""
 
 #. TRANSLATORS: `help' must not be
 #. translated.
 #: src/redshift.c:526
 #, c-format
 msgid "Try `-m %s:help' for more information.\n"
-msgstr "Proveu '-m %s:help' per obtenir més informació.\n"
+msgstr ""
 
 #. TRANSLATORS: `help' must not be translated.
 #: src/redshift.c:556
 #, c-format
 msgid "Try -m %s:help' for more information.\n"
-msgstr "Proveu '-m %s:help' per obtenir més informació.\n"
+msgstr ""
 
 #: src/redshift.c:568
 #, c-format
 msgid "Failed to start adjustment method %s.\n"
-msgstr "No s'ha pogut iniciar el mètode d'ajust %s.\n"
+msgstr ""
 
 #: src/redshift.c:705
 msgid "Malformed gamma argument.\n"
-msgstr "Argument de gamma mal format.\n"
+msgstr ""
 
 #: src/redshift.c:707 src/redshift.c:809 src/redshift.c:828
 msgid "Try `-h' for more information.\n"
-msgstr "Proveu '-h' per obtenir més informació.\n"
+msgstr ""
 
 #: src/redshift.c:748 src/redshift.c:919
 #, c-format
 msgid "Unknown location provider `%s'.\n"
-msgstr "Proveïdor d'ubicació '%s' desconegut.\n"
+msgstr ""
 
 #. TRANSLATORS: This refers to the method
 #. used to adjust colors e.g VidMode
 #: src/redshift.c:779 src/redshift.c:905
 #, c-format
 msgid "Unknown adjustment method `%s'.\n"
-msgstr "Mètode d'ajust '%s' desconegut.\n"
+msgstr ""
 
 #: src/redshift.c:807
 msgid "Malformed temperature argument.\n"
-msgstr "Argument de temperatura mal format.\n"
+msgstr ""
 
 #: src/redshift.c:893
 msgid "Malformed gamma setting.\n"
-msgstr "Paràmetre de gamma mal format.\n"
+msgstr ""
 
 #: src/redshift.c:928
 #, c-format
 msgid "Unknown configuration setting `%s'.\n"
-msgstr "Paràmetre de configuració '%s' desconegut.\n"
+msgstr ""
 
 #: src/redshift.c:967
 #, c-format
@@ -232,26 +235,26 @@ msgstr ""
 
 #: src/redshift.c:972
 msgid "Trying next provider...\n"
-msgstr "S'està provant el següent proveïdor...\n"
+msgstr ""
 
 #: src/redshift.c:978
 #, c-format
 msgid "Using provider `%s'.\n"
-msgstr "S'està fent servir el proveïdor '%s'.\n"
+msgstr ""
 
 #: src/redshift.c:986
 msgid "No more location providers to try.\n"
-msgstr "No queden més proveïdors d'ubicació per provar.\n"
+msgstr ""
 
 #: src/redshift.c:995
 msgid "Unable to get location from provider.\n"
-msgstr "No s'ha pogut obtenir la ubicació des del proveïdor.\n"
+msgstr ""
 
 #. TRANSLATORS: Append degree symbols if possible.
 #: src/redshift.c:1004
 #, c-format
 msgid "Location: %f, %f\n"
-msgstr "Ubicació: %fº, %fº\n"
+msgstr ""
 
 #: src/redshift.c:1005
 #, c-format
@@ -267,17 +270,17 @@ msgstr ""
 #: src/redshift.c:1016
 #, c-format
 msgid "Latitude must be between %.1f and %.1f.\n"
-msgstr "La latitud ha d'estar entre %.1f i %.1f.\n"
+msgstr ""
 
 #: src/redshift.c:1025
 #, c-format
 msgid "Longitude must be between %.1f and %.1f.\n"
-msgstr "La longitud ha d'estar entre %.1f i %.1f.\n"
+msgstr ""
 
 #: src/redshift.c:1033 src/redshift.c:1041 src/redshift.c:1059
 #, c-format
 msgid "Temperature must be between %uK and %uK.\n"
-msgstr "La temperatura ha d'estar entre %uK i %uK.\n"
+msgstr ""
 
 #: src/redshift.c:1049
 #, c-format
@@ -299,62 +302,62 @@ msgstr ""
 #: src/redshift.c:1085
 #, c-format
 msgid "Gamma value must be between %.1f and %.1f.\n"
-msgstr "El valor de la gamma ha d'estar entre %.1f i %.1f.\n"
+msgstr ""
 
 #: src/redshift.c:1091
 #, c-format
 msgid "Gamma: %.3f, %.3f, %.3f\n"
-msgstr "Gamma: %.3f, %.3f, %.3f\n"
+msgstr ""
 
 #: src/redshift.c:1114
 msgid "Trying next method...\n"
-msgstr "S'està provant el mètode següent...\n"
+msgstr ""
 
 #: src/redshift.c:1119
 #, c-format
 msgid "Using method `%s'.\n"
-msgstr "S'està fent servir el mètode '%s'.\n"
+msgstr ""
 
 #: src/redshift.c:1126
 msgid "No more methods to try.\n"
-msgstr "No queden més mètodes per provar.\n"
+msgstr ""
 
 #: src/redshift.c:1142 src/redshift.c:1285
 msgid "Unable to read system time.\n"
-msgstr "No s'ha pogut llegir l'hora del sistema.\n"
+msgstr ""
 
 #. TRANSLATORS: Append degree symbol if possible.
 #: src/redshift.c:1151
 #, c-format
 msgid "Solar elevation: %f\n"
-msgstr "Elevació solar: %f\n"
+msgstr ""
 
 #: src/redshift.c:1162 src/redshift.c:1181 src/redshift.c:1341
 #, c-format
 msgid "Color temperature: %uK\n"
-msgstr "Temperatura de color: %uK\n"
+msgstr ""
 
 #: src/redshift.c:1163 src/redshift.c:1342
 #, c-format
 msgid "Brightness: %.2f\n"
-msgstr "Brillantor: %.2f\n"
+msgstr ""
 
 #: src/redshift.c:1173 src/redshift.c:1186 src/redshift.c:1198
 #: src/redshift.c:1351
 msgid "Temperature adjustment failed.\n"
-msgstr "No s'ha pogut ajustar la temperatura.\n"
+msgstr ""
 
 #: src/config-ini.c:167
 msgid "Malformed section header in config file.\n"
-msgstr "Capçalera mal formada al fitxer de configuració.\n"
+msgstr ""
 
 #: src/config-ini.c:203
 msgid "Malformed assignment in config file.\n"
-msgstr "Assignació mal formada en el fitxer de configuració.\n"
+msgstr ""
 
 #: src/config-ini.c:214
 msgid "Assignment outside section in config file.\n"
-msgstr "Assignació fora de secció al fitxer de configuració.\n"
+msgstr ""
 
 #: src/gamma-drm.c:78
 #, c-format
@@ -364,17 +367,17 @@ msgstr ""
 #: src/gamma-drm.c:88 src/gamma-randr.c:303
 #, c-format
 msgid "CRTC %d does not exist. "
-msgstr "El CRTC %d no existeix. "
+msgstr ""
 
 #: src/gamma-drm.c:91 src/gamma-randr.c:306
 #, c-format
 msgid "Valid CRTCs are [0-%d].\n"
-msgstr "Els CRTCs vàlids són [0-%d].\n"
+msgstr ""
 
 #: src/gamma-drm.c:94 src/gamma-randr.c:309
 #, c-format
 msgid "Only CRTC 0 exists.\n"
-msgstr "Només existeix el CRTC 0.\n"
+msgstr ""
 
 #: src/gamma-drm.c:132
 #, c-format
@@ -396,20 +399,16 @@ msgid ""
 msgstr ""
 
 #: src/gamma-drm.c:214
-#, fuzzy
 msgid "Adjust gamma ramps with Direct Rendering Manager.\n"
-msgstr "Ajusta les rampes de gamma amb el GDI de Windows.\n"
+msgstr ""
 
 #. TRANSLATORS: DRM help output
 #. left column must not be translated
 #: src/gamma-drm.c:219
-#, fuzzy
 msgid ""
 "  card=N\tGraphics card to apply adjustments to\n"
 "  crtc=N\tCRTC to apply adjustments to\n"
 msgstr ""
-"  screen=N\tPantalla X a la qual aplicar els ajustos\n"
-"  crtc=N\tCRTC al qual aplicar els ajustos\n"
 
 #: src/gamma-drm.c:232
 #, c-format
@@ -420,37 +419,37 @@ msgstr ""
 #: src/location-geoclue.c:171 src/location-manual.c:96
 #, c-format
 msgid "Unknown method parameter: `%s'.\n"
-msgstr "Paràmetre de mètode desconegut: '%s'.\n"
+msgstr ""
 
 #: src/gamma-randr.c:69 src/gamma-randr.c:126 src/gamma-randr.c:165
 #: src/gamma-randr.c:191 src/gamma-randr.c:248 src/gamma-randr.c:340
 #, c-format
 msgid "`%s' returned error %d\n"
-msgstr "'%s' ha retornat l'error %d\n"
+msgstr ""
 
 #: src/gamma-randr.c:77
 #, c-format
 msgid "Unsupported RANDR version (%u.%u)\n"
-msgstr "Versió RANDR no compatible (%u.%u)\n"
+msgstr ""
 
 #: src/gamma-randr.c:111
 #, c-format
 msgid "Screen %i could not be found.\n"
-msgstr "No s'ha pogut trobar la pantalla %i.\n"
+msgstr ""
 
 #: src/gamma-randr.c:177 src/gamma-vidmode.c:84
 #, c-format
 msgid "Gamma ramp size too small: %i\n"
-msgstr "La mida de la rampa de gamma és massa petita: %i\n"
+msgstr ""
 
 #: src/gamma-randr.c:250
 #, c-format
 msgid "Unable to restore CRTC %i\n"
-msgstr "No s'ha pogut restablir el CRTC %i\n"
+msgstr ""
 
 #: src/gamma-randr.c:271
 msgid "Adjust gamma ramps with the X RANDR extension.\n"
-msgstr "Ajusta les rampes de gamma amb l'extensió X RANDR.\n"
+msgstr ""
 
 #. TRANSLATORS: RANDR help output
 #. left column must not be translated
@@ -459,48 +458,46 @@ msgid ""
 "  screen=N\tX screen to apply adjustments to\n"
 "  crtc=N\tCRTC to apply adjustments to\n"
 msgstr ""
-"  screen=N\tPantalla X a la qual aplicar els ajustos\n"
-"  crtc=N\tCRTC al qual aplicar els ajustos\n"
 
 #: src/gamma-vidmode.c:48 src/gamma-vidmode.c:69 src/gamma-vidmode.c:78
 #: src/gamma-vidmode.c:105 src/gamma-vidmode.c:160 src/gamma-vidmode.c:190
 #, c-format
 msgid "X request failed: %s\n"
-msgstr "Ha fallat la petició X: %s\n"
+msgstr ""
 
 #: src/gamma-vidmode.c:126
 msgid "Adjust gamma ramps with the X VidMode extension.\n"
-msgstr "Ajusta les rampes de gamma amb l'extensió X VidMode.\n"
+msgstr ""
 
 #. TRANSLATORS: VidMode help output
 #. left column must not be translated
 #: src/gamma-vidmode.c:131
 msgid "  screen=N\tX screen to apply adjustments to\n"
-msgstr "  screen=N\tPantalla X a la qual aplicar els ajustos\n"
+msgstr ""
 
 #: src/gamma-w32gdi.c:58 src/gamma-w32gdi.c:119 src/gamma-w32gdi.c:140
 msgid "Unable to open device context.\n"
-msgstr "No s'ha pogut obrir el context del dispositiu.\n"
+msgstr ""
 
 #: src/gamma-w32gdi.c:65
 msgid "Display device does not support gamma ramps.\n"
-msgstr "El monitor no permet rampes de gamma.\n"
+msgstr ""
 
 #: src/gamma-w32gdi.c:81
 msgid "Unable to save current gamma ramp.\n"
-msgstr "No s'ha pogut desar la rampa de gamma actual.\n"
+msgstr ""
 
 #: src/gamma-w32gdi.c:103
 msgid "Adjust gamma ramps with the Windows GDI.\n"
-msgstr "Ajusta les rampes de gamma amb el GDI de Windows.\n"
+msgstr ""
 
 #: src/gamma-w32gdi.c:125
 msgid "Unable to restore gamma ramps.\n"
-msgstr "No s'han pogut restablir les rampes de gamma.\n"
+msgstr ""
 
 #: src/gamma-w32gdi.c:165
 msgid "Unable to set gamma ramps.\n"
-msgstr "No s'han pogut establir les rampes de gamma.\n"
+msgstr ""
 
 #: src/location-geoclue.c:75
 #, c-format
@@ -508,9 +505,8 @@ msgid "Unable to obtain master client: %s\n"
 msgstr ""
 
 #: src/location-geoclue.c:79
-#, fuzzy
 msgid "Unable to obtain master client\n"
-msgstr "No s'ha pogut llegir l'hora del sistema.\n"
+msgstr ""
 
 #: src/location-geoclue.c:90
 #, c-format
@@ -568,11 +564,11 @@ msgstr ""
 
 #: src/location-manual.c:50
 msgid "Latitude and longitude must be set.\n"
-msgstr "S'han d'establir la latitud i la longitud.\n"
+msgstr ""
 
 #: src/location-manual.c:65
 msgid "Specify location manually.\n"
-msgstr "Especificar la ubicació manualment.\n"
+msgstr ""
 
 #. TRANSLATORS: Manual location help output
 #. left column must not be translated
@@ -581,8 +577,6 @@ msgid ""
 "  lat=N\t\tLatitude\n"
 "  lon=N\t\tLongitude\n"
 msgstr ""
-"  lat=N\t\tLatitud\n"
-"  lon=N\t\tLongitud\n"
 
 #: src/location-manual.c:73
 msgid ""
@@ -592,7 +586,7 @@ msgstr ""
 
 #: src/location-manual.c:87
 msgid "Malformed argument.\n"
-msgstr "Argument mal format.\n"
+msgstr ""
 
 #: src/redshift-gtk/statusicon.py:81 src/redshift-gtk/statusicon.py:255
 msgid "Enabled"
@@ -616,7 +610,7 @@ msgstr ""
 
 #: src/redshift-gtk/statusicon.py:98
 msgid "Autostart"
-msgstr "Inici automàtic"
+msgstr ""
 
 #: src/redshift-gtk/statusicon.py:110 src/redshift-gtk/statusicon.py:121
 msgid "Info"
@@ -649,6 +643,3 @@ msgstr ""
 #: src/redshift-gtk/statusicon.py:267
 msgid "Location"
 msgstr ""
-
-#~ msgid "Toggle"
-#~ msgstr "Commuta"
